@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First HTML Page</title>
+    <title>ChatGPT + DingTalk</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first HTML page.</p>
+    <div id="chatbox">
+        <!-- 聊天内容显示区域 -->
+    </div>
+    <input type="text" id="user-input" placeholder="输入消息">
+    <button onclick="sendMessage()">发送</button>
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value;
+            // 发送用户输入到服务器
+            // 处理服务器返回的响应，添加到聊天内容显示区域
+        }
+    </script>
 </body>
 </html>
